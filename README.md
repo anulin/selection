@@ -28,11 +28,13 @@ getKEGGscores.py
     -(optional) snp to gene annotation in the following format:
       Comment(can be alllele nucleotide)  SNP_ID  Gene
       .	1_871269	SAMD11
+    by default annotated_exomeCeu.txt is used
     
     -(optional) gene to pathway annotation file in the following format:
       Gene  Pathway_ID  Human-readable_pathway_name
       AKR1A1	hsa00010	Glycolysis / Gluconeogenesis	
       ADH1A	hsa00010	Glycolysis / Gluconeogenesis	
+    by default KEGG to Genes Upd_ShortNams.txt is used
 
   Usage:
   
