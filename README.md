@@ -13,10 +13,12 @@ Scores.dll
     --help - outputs help
     --maf - minor allele frequency filter (default 0.05)
     --mi - minimal fraction of individuals available for snp (default 1)
+    
   Output:
     Scores file for snps with the following format:
       SNP_ID  SNP_score  Nameofallele_1 2 3
       1_754063 0.618055382764516 G T .
+      
 getKEGGscores.py
   Input:
     -Scores file for snps produced by Scores.dll
