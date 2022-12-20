@@ -1,6 +1,7 @@
 The tool searches for selection on polygenic traits. It consists of two scripts: scores.dll and getKEGGscores.py
 
 Scores.dll
+
   Input:
     Two snp counts files in the followind format:
     SNP_ID  total_count countofallele_1 2 3 4 Nameofallele_1 2 3
@@ -9,12 +10,14 @@ Scores.dll
     Two numbers of sample sizes
 
   Usage:
+  
     dotnet scoresvcf.dll snpcountsfile1 snpcountsfile2 samplesize1 samplesize2 [--optional flags]
     --help - outputs help
     --maf - minor allele frequency filter (default 0.05)
     --mi - minimal fraction of individuals available for snp (default 1)
     
   Output:
+  
     Scores file for snps with the following format:
       SNP_ID  SNP_score  Nameofallele_1 2 3
       1_754063 0.618055382764516 G T .
