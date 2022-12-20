@@ -35,14 +35,19 @@ getKEGGscores.py
       ADH1A	hsa00010	Glycolysis / Gluconeogenesis	
 
   Usage:
+  
     getKEGGscores scoresfile --a annotationfile --n networksfile --p 15
     scoresfile is produced by scores.dll 
     --a (optional) - custom file with snp to gene annotation
     --n (optional) - custom file with gene to pathway annotation
     --p (optional) - percentile of snp scores for each pathway that will be calculated as a pathway score. Default is 15%
     --h - help
+    
   Output:
+  
     Pathway scores and their p-values (obtained with permutation test) without adjustments.
+    
     Format:
+    
       Name  ID  P-value score snps genes
       Epstein-Barr virus infection hsa05169 0.000326349	0.107253818	413	202	
