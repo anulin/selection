@@ -23,6 +23,7 @@ Scores.dll
       1_754063 0.618055382764516 G T .
       
 getKEGGscores.py
+  
   Input:
   
     -Scores file for snps produced by Scores.dll
