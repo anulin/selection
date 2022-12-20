@@ -45,7 +45,7 @@ if '--n' in sys.argv and len(sys.argv)>=sys.argv.index('--n')+2:
     networkfile = sys.argv[sys.argv.index('--n')+1]
     c += 2
 else:
-    networkfile="KEGG to Genes Upd.txt"
+    networkfile="KEGG to Genes Upd_ShortNams.txt"
 
 if len(sys.argv)!=c or sys.argv[1]=='--a' or sys.argv[1]=='--n':
     raise Exception('Wrong arguments. Use --h to see how to run')#frqfile,  annot file, networkfile, flags
@@ -61,7 +61,7 @@ with open(frqFile) as file:#открываем файл с метриками и
 
 #annotated_exomeCeuS annotated_ExomeS
 genes=set()
-with open("annotated_ExomeCeu.txt") as file:# открываем файл аннотации нужных сипов и генов и записываем их метрики, используя словарь х
+with open(annotfile) as file:# открываем файл аннотации нужных сипов и генов и записываем их метрики, используя словарь х
     for l in file:
         if l.split()[1] in used or len(l.split())<3:#избегаем повторения снипов
             print(l)
@@ -82,7 +82,7 @@ pvalues={}
 PathwayGenes={}
 ListOfVals=[]
 nnn=set()#genes present in networks
-with open("KEGG to Genes Upd.txt") as file:#KEGG_database  #KEGG to Genes Upd
+with open(networkfile) as file:#KEGG_database  #KEGG to Genes Upd
     file.readline()
     for line in file:
         if line.split()[1] not in PathwayGenes:
