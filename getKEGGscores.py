@@ -20,10 +20,7 @@ k=0
 
 used=set()
 c=2
-print('''getKEGGscores scoresfile --a annotationfile --n networksfile'
---a (optional) --n (optional)
---h - help''')
-exit()
+
 if '--h' in sys.argv:
     print('''getKEGGscores scoresfile --a annotationfile --n networksfile
     scoresfile is produced by scores.dll 
