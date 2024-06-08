@@ -13,15 +13,11 @@ def union(a,b):
 x={}
 y={}
 z={}
-"""z - использовалось в старой программе, х-метрики снипов, y - названия генов у белков"""
-"считает метрики сети как среднюю/медианную метрику ее снипов"
+
 
 metrics={}#словарь списков метрик  для  гена/ dictionary of snp metrics lists for genes
 k=0
-#код от старой программы
-# with open("results.txt") as file:
-#     for line in file:
-#             z[line.split()[1]]=line.split()[0]
+
 used=set()
 c=2
 print('''getKEGGscores scoresfile --a annotationfile --n networksfile'
@@ -52,7 +48,7 @@ if len(sys.argv)!=c or sys.argv[1]=='--a' or sys.argv[1]=='--n':
 frqFile=sys.argv[1]
 
 
-with open(frqFile) as file:#открываем файл с метриками и снипами и записываем в словарь х #scoresExomeG-T_maf #scoresvcfExomeCeuMaf
+with open(frqFile) as file:#открываем файл с метриками и снипами и записываем в словарь х 
     for line in file:
         x[line.split()[0]]=line.split()[1]
 # with open("scoresvcfExomeCeuMaf.txt") as file:
