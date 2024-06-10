@@ -4,7 +4,7 @@ Scores.dll
 
   Input:
   
-    Two snp counts files in the followind format:
+    Two snp counts files in the following format:
     SNP_ID  total_count countofallele_1 2 3 4 Nameofallele_1 2 3
     1_534247	96	192	0	0	0	C	T	.
 
